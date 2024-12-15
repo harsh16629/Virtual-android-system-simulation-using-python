@@ -11,7 +11,7 @@ def check_dependencies():
 
 def start_virtual_android():
     """Start a virtual Android system using QEMU."""
-    android_img = "C:/Users/Harsh/AppData/Local/Android/system-images/android-34/default/x86_64/system.img"  #Use your OWN android system image path
+    android_img = "android.img"  #Use your OWN android system image path
     if not os.path.exists(android_img):
         raise FileNotFoundError(f"Android image file '{android_img}' not found.")
 
@@ -70,7 +70,7 @@ def main():
         check_dependencies()
         process = start_virtual_android()
         print("Virtual Android system launched.")
-        apk_path = "webtoon.apk" #This is a test apk file, you can use whatever you want to.
+        apk_path = "sample.apk" #This is a test apk file, you can use whatever you want to.
         install_apk(apk_path)
 
         retrieve_system_info()
