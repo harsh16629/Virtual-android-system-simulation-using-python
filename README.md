@@ -5,16 +5,16 @@ This script simulates a virtual Android environment capable of running basic tas
 ## Requirements
 
 - Python 3.7 or higher
-- QEMU or Android Emulator installed
-- ADB (Android Debug Bridge) installed
-- An Android system image (`android.img`)
-- A sample APK file (`sample_app.apk`)
+- QEMU 
+- ADB (Android Debug Bridge) 
+- An Android system image 
+- A sample APK file 
 
 ## How to Run the Script
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/harsh16629/Virtual-android-system-simulation-using-python.git
    cd <repository-folder>
    ```
 
